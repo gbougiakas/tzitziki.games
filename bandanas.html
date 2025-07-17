@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Bandanas</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html, body {
+      height: 100%;
+      background-color: #231F20;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: start;
+      font-family: Arial, sans-serif;
+      color: white;
+    }
+    body {
+      padding: 2rem 1rem;
+      min-height: 100vh;
+    }
+    .logo-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      width: 100%;
+      max-width: 900px;
+    }
+    /* Main logo with rounded corners */
+    .main-logo {
+      width: 80vw;
+      max-width: 600px;
+      height: auto;
+      object-fit: contain;
+      display: block;
+      margin: 0 auto;
+      border-radius: 22%;
+      transition: border-radius 0.3s ease;
+    }
+    .main-logo:hover {
+      border-radius: 22%;
+    }
+    /* Bandanas text below the main logo */
+    .logo-text {
+      color: white;
+      font-size: 3rem; /* large size */
+      font-weight: bold;
+      text-align: center;
+      user-select: none;
+      /* Responsive font size */
+    }
+    @media (max-width: 400px) {
+      .logo-text {
+        font-size: 2.2rem;
+      }
+    }
+    @media (min-width: 900px) {
+      .logo-text {
+        font-size: 3.5rem;
+      }
+    }
+    .small-logos {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      width: 100%;
+      max-width: 400px;
+      height: 60px;
+    }
+    .small-logo-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+    }
+    .small-logo {
+      height: 100%;
+      width: auto;
+      max-width: 180px;
+      object-fit: contain;
+      transition: transform 0.2s ease;
+      cursor: pointer;
+    }
+    .small-logo:hover, .small-logo:focus {
+      transform: scale(1.05);
+      outline: none;
+    }
+    @media (min-width: 600px) {
+      .main-logo {
+        width: 50vw;
+      }
+      .small-logos {
+        height: 80px;
+      }
+    }
+    @media (min-width: 900px) {
+      .main-logo {
+        width: 600px;
+      }
+      .small-logos {
+        max-width: 360px;
+        height: 90px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="logo-container">
+    <img src="bandanas.png" alt="Game Logo" class="main-logo" />
+    <div class="logo-text">Bandanas</div>
+    <div class="small-logos">
+      <a href="https://apps.apple.com/app" target="_blank" rel="noopener noreferrer" aria-label="Download on the App Store" class="small-logo-link">
+        <img src="appstore.png" alt="App Store Logo" class="small-logo" />
+      </a>
+      <a href="https://play.google.com/store" target="_blank" rel="noopener noreferrer" aria-label="Get it on Google Play" class="small-logo-link">
+        <img src="googleplay.png" alt="Google Play Logo" class="small-logo" />
+      </a>
+    </div>
+  </div>
+</body>
+</html>
