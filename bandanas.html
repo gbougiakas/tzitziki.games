@@ -91,6 +91,16 @@
       transform: scale(1.05);
       outline: none;
     }
+    .small-logo-container {
+  display: inline-block;
+  text-align: center;
+}
+.subtitle {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 0.3rem;
+  font-style: italic;
+}
     @media (min-width: 600px) {
       .main-logo {
         width: 50vw;
@@ -115,12 +125,13 @@
     <img src="bandanas.png" alt="Game Logo" class="main-logo" />
     <div class="logo-text">Bandanas</div>
     <div class="small-logos">
-      <a href="https://apps.apple.com/app" target="_blank" rel="noopener noreferrer" aria-label="Download on the App Store" class="small-logo-link">
+      <a href="https://apps.apple.com/us/app/bandanas/id6748525165" target="_blank" rel="noopener noreferrer" aria-label="Download on the App Store" class="small-logo-link">
         <img src="appstore.png" alt="App Store Logo" class="small-logo" />
       </a>
-      <a href="https://play.google.com/store" target="_blank" rel="noopener noreferrer" aria-label="Get it on Google Play" class="small-logo-link">
-        <img src="googleplay.png" alt="Google Play Logo" class="small-logo" />
-      </a>
+<div class="small-logo-container" aria-label="Get it on Google Play">
+  <img src="googleplay.png" alt="Google Play Logo" class="small-logo" />
+  <div class="subtitle">Coming Soon</div>
+</div>
     </div>
   </div>
 </body>
